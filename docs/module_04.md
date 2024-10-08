@@ -140,7 +140,7 @@ Open a terminal window and make sure you are in the root folder of this hands-on
 Then run the following Docker Compose command which will re-create the three Flink-related containers, namely, `jobmanager`, `taskmanager`, and `sql-client`.
 
 ```bash
-docker-compose up -d --force-recreate jobmanager taskmanager sql-client
+docker compose up -d --force-recreate jobmanager taskmanager sql-client
 ```
 
 After a few moments, these three container services should be up and running again.
