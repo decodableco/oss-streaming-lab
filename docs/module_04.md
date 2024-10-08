@@ -485,7 +485,7 @@ Next, go to the Flink SQL client again,
 and issue this command:
 
 ```sql
-Flink SQL> SET execution.checkpointing.interval = 10s;
+SET execution.checkpointing.interval = 10s;
 ```
 
 ```bash
