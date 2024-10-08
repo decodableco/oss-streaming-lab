@@ -459,7 +459,8 @@ You could also take advantage of the powerful querying capabilities of OpenSearc
 Flink comes with a built-in web dashboard,
 which you can use to monitor the system, for instance by examining log files, tracking the progress of checkpoints, analyse backpressure in jobs, and more.
 To go to the Flink dashboard, open up http://localhost:8081 in your browser.
-You'll see a list of all currently and previously running jobs:
+You'll see a list of all currently and previously running jobs.
+Since you re-created all Flink containers after adding the UDF JAR there is currently only this one job running that you created earlier in this very module.
 
 !["Flink Web Dashboard"](./images/m04/03-flink-web-dashboard-overview.png)
 
