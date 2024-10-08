@@ -34,6 +34,18 @@ WITH (
 );
 ```
 
+Next, reset the max column width to its original value:
+
+```sql
+SET 'sql-client.display.max-column-width' = '30';
+```
+
+Also, reset the result mode to `table`:
+
+```sql
+SET 'sql-client.execution.result-mode' = 'table';
+```
+
 ### Preview Data Changes
 
 From within the Flink SQL CLI, write the following basic `SELECT` query to check the records in that table:

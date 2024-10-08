@@ -4,6 +4,16 @@ The hands-on lab infra is all running locally in containers and requires [Docker
 
 !["Overview Containerized Lab Infra"](./images/setup/01-hol-solution-overview.png)
 
+> NOTE
+>
+> If you could not pull the container images before the lab,
+> and pulling via the remote network through conference wifi takes too long,
+> you can try out these fall-back options:
+>
+> * Tether with your phone (preferred; download volume is ~5 GB)
+> * [Using the local lab container registry](lab_image_registry.md)
+> * [Using the USB sticks](lab_image_drive.md)
+
 In the root folder of this repository run
 
 ```bash
