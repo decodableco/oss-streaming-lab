@@ -1,18 +1,29 @@
 ## Local Infra Setup
 
-The hands-on lab infra is all running locally in containers and requires [Docker Compose](https://docs.docker.com/compose/).
-
-!["Overview Containerized Lab Infra"](./images/setup/01-hol-solution-overview.png)
-
 > NOTE
->
+> Before starting with the lab, make sure to have the following images pulled down to your machine:
+
+```
+docker image pull quay.io/debezium/example-postgres:2.7.3.Final
+docker image pull quay.io/debezium/tooling:latest
+docker image pull docker.io/opensearchproject/opensearch:1.3.19
+docker image pull docker.io/flink:1.19.1-scala_2.12-java17
+docker image pull docker.io/hpgrahsl/hol-devoxxbe-model-serving-app:1.0.0
+docker image pull docker.io/hpgrahsl/hol-devoxxbe-review-app:1.0.1
+docker image pull docker.io/hpgrahsl/data-generator:1.1.4
+```
+
 > If you could not pull the container images before the lab,
-> and pulling via the remote network through conference wifi takes too long,
+> and pulling from the upstream image registry through conference wifi takes too long,
 > you can try out these fall-back options:
 >
 > * Tether with your phone (preferred; download volume is ~5 GB)
 > * [Using the local lab container registry](lab_image_registry.md)
 > * [Using the USB sticks](lab_image_drive.md)
+
+The hands-on lab infra is all running locally in containers and requires [Docker Compose](https://docs.docker.com/compose/).
+
+!["Overview Containerized Lab Infra"](./images/setup/01-hol-solution-overview.png)
 
 In the root folder of this repository run
 
